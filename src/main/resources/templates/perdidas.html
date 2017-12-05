@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorator= "layout">
+
+
+		<div class="col-9 este" layout:fragment="contenido_principal">
+		<div class="row">
+			<div class="item-mascota col-6" th:each="mascota : ${listaMascota}"> 
+				<a href="#" th:text="${mascota.nombre}">peco</a>
+				<a th:href=" '/perdidas/' + ${mascota.id}" th:th:text= "${mascota.nombre}">peco</a>
+			</div>
+		</div>
+	</div>				
+	</html>
+
+	
+	
+		<!--  >span class="item-mascota" th:each="mascota : ${listaMascota}">
+			<a href="" th:text="${mascota.nombre}"></a>
+		</span -->
+
+
+<!--   >ul>
+			<li th:each="mascota : ${listaMascota}"> 
+				<label>Nombre: </label> <p th:text="${mascota.nombre}"></p>
+				<label>Raza: </label> <p th:text="${mascota.raza}"></p>
+				
+			</li>
+		</ul -->

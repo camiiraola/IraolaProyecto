@@ -1,0 +1,14 @@
+.item-sabor {
+	display: block;
+}
+
+.active {
+	background-color: red!important;
+}
+.este{
+	border: solid;
+	
+}
+p{
+	font-size: 30px
+}
